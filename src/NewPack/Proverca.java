@@ -12,7 +12,7 @@ public class Proverca {
                 c=r.nextInt();
                 a=123/(b/c);
             }catch (ArithmeticException e){
-                System.out.println("Дeлeниe на нуль.");
+                System.out.println("Дeлeниe на нуль." + e);
                 a=0;
             }
             System.out.println( " a: " + a);
