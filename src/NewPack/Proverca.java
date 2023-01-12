@@ -28,8 +28,12 @@ public static void Number(int[] mass){
         System.out.println("Введите число:");
         Scanner scan1 = new Scanner(System.in);
         int str = scan1.nextInt();
-        array[str]= null;
-        System.out.println(Arrays.toString(array));
+        if(str<10) {
+            array[str] = null;
+            System.out.println(Arrays.toString(array));
+        }
+        else{
+        System.out.println("не верное число:"        );}
         Number(mass);
         }
     }
